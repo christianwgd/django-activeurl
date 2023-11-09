@@ -5,27 +5,24 @@ if: (type = push AND branch IN (master)) OR (type = pull_request)
 matrix:
   fast_finish: true
   include:
-    - python: 2.7
-      env: TOXENV=py27-flake8
-    - python: 3.6
-      env: TOXENV=py36-flake8
 
-    - python: 2.7
-      env: TOXENV=py27-isort
-    - python: 3.6
-      env: TOXENV=py36-isort
+    - python: 3.10
+      env: TOXENV=py310-flake8
 
-    - python: 3.6
-      env: TOXENV=py36-dj22
-    - python: 3.6
-      env: TOXENV=py36-dj30
+    - python: 3.10
+      env: TOXENV=py310-isort
 
-    - python: 3.6
-      env: TOXENV=py36-djmaster
+    - python: 3.10
+      env: TOXENV=py310-dj42
+    - python: 3.11
+      env: TOXENV=py311-dj42
+
+    - python: 3.10
+      env: TOXENV=py310-djmaster
 
   allow_failures:
-    - python: 3.6
-      env: TOXENV=py36-djmaster
+    - python: 3.10
+      env: TOXENV=py310-djmaster
 
 cache:
   - apt
@@ -48,8 +45,8 @@ deploy:
   on:
     tags: true
     all_branches: true
-    python: 3.6
-    condition: $TOXENV = py36-dj20
+    python: 3.10
+    condition: $TOXENV = py310-dj42
 
 notifications:
   email:

@@ -18,7 +18,6 @@ Development Status :: 5 - Production/Stable
 Natural Language :: English
 Programming Language :: Python
 Programming Language :: Python :: 3
-Programming Language :: Python :: 3.8
 Programming Language :: Python :: 3.9
 Programming Language :: Python :: 3.10
 Programming Language :: Python :: Implementation :: CPython
@@ -42,7 +41,7 @@ packages = [
 ]
 
 install_requires = [
-    'django<2;python_version<"3"',
+    'django<5;python_version<"3"',
     'django;python_version>"2"',
     'lxml',
     'django-classy-tags',

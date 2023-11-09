@@ -17,8 +17,8 @@ Updates
 =======
 
 This version of django-activeurl is compatible with django
-up to version 4.1 and dropped support for version before
-3.2. Therefore python > 3.8 is required.
+up to version 4.2 and dropped support for version before
+3.2. Therefore python >= 3.9 is required.
 
 Features
 ========
