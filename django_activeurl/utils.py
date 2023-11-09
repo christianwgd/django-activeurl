@@ -104,7 +104,7 @@ def check_active(url, element, **kwargs):
     ignore_params = yesno_to_bool(kwargs['ignore_params'], 'ignore_params')
 
     # check missing href parameter
-    if not url.attrib.get('href', None) is None:
+    if url.attrib.get('href', None) is not None:
         # get href attribute
         href = url.attrib['href'].strip()
 
