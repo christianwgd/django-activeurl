@@ -4,6 +4,12 @@ Changelog
 
 Here you can find the recent changes to django-activeurl
 
+0.2.1 November 9th, 2023
+------------------------
+
+- Drop support for Django < 3.2
+- Add support for Django 4.2
+
 0.2.0 January 26th, 2020
 ------------------------
 
@@ -39,3 +45,4 @@ Here you can find the recent changes to django-activeurl
   tag::
 
       {% activeurl ignore_params="yes" %}
+
