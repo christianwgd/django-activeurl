@@ -4,6 +4,14 @@ Changelog
 
 Here you can find the recent changes to django-activeurl
 
+0.2.2 January 21st, 2026
+------------------------
+
+- Drop suppoert for python < 3.12
+- Add suport for python 3.12 and 3.13
+- Drop support for Django < 5.2
+- Add support for Django 6
+
 0.2.1 November 9th, 2023
 ------------------------
 

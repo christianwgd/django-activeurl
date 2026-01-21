@@ -18,8 +18,8 @@ Development Status :: 5 - Production/Stable
 Natural Language :: English
 Programming Language :: Python
 Programming Language :: Python :: 3
-Programming Language :: Python :: 3.9
-Programming Language :: Python :: 3.10
+Programming Language :: Python :: 3.12
+Programming Language :: Python :: 3.14
 Programming Language :: Python :: Implementation :: CPython
 Programming Language :: Python :: Implementation :: PyPy
 Operating System :: MacOS :: MacOS X
@@ -41,8 +41,7 @@ packages = [
 ]
 
 install_requires = [
-    'django<5;python_version<"3"',
-    'django;python_version>"2"',
+    'django<7;python_version<"3"',
     'lxml',
     'django-classy-tags',
     'django_appconf',

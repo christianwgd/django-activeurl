@@ -20,6 +20,9 @@ matrix:
     - python: 3.10
       env: TOXENV=py310-djmaster
 
+    - python: 3.13
+      env: TOXENV=py313-dj6
+
   allow_failures:
     - python: 3.10
       env: TOXENV=py310-djmaster
@@ -45,8 +48,8 @@ deploy:
   on:
     tags: true
     all_branches: true
-    python: 3.10
-    condition: $TOXENV = py310-dj42
+    python: 3.13
+    condition: $TOXENV = py313-dj6
 
 notifications:
   email:
